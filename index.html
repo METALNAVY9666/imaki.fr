@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Firas Zaazaa</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about" id="about-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects" id="projects-link"
+                >Projects</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact" id="contact-link">Contact</a>
+            </li>
+          </ul>
+          <button id="theme-toggle" class="btn btn-outline-light ml-2">
+            Dark Mode
+          </button>
+          <button id="language-toggle" class="btn btn-outline-light ml-2">
+            Français
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero bg-primary text-white text-center">
+      <div class="container">
+        <h1 id="hero-title" class="display-4">Welcome to My Portfolio</h1>
+        <p id="hero-subtitle" class="lead">
+          Full-Stack Developer | React | Flask
+        </p>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+      <div class="container text-center">
+        <h2 id="about-title">About Me</h2>
+        <p id="about-text" class="lead">
+          I'm a passionate developer with experience in building web
+          applications using React and Flask. I love turning ideas into reality
+          with code.
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-light">
+      <div class="container">
+        <h2 id="projects-title" class="text-center">My Projects</h2>
+        <div class="row">
+          <!-- Project 1 -->
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="https://via.placeholder.com/300x200"
+                class="card-img-top"
+                alt="Project 1"
+              />
+              <div class="card-body">
+                <h5 id="project1-title" class="card-title">
+                  Car Publication CRM
+                </h5>
+                <p id="project1-text" class="card-text">
+                  The project i'm the most proud of.<br /><br />
+                  A car posts app built with React, Flask, AWS EC2, Git, SQLITE,
+                  Facebook Graph, and more ... It lets you store you vehicules
+                  into a unique database using a smooth and reliable React TS
+                  interface. It also allows you to post your vehicules on
+                  multiple social medias (only facebook at the moment, still in
+                  construction). With this web app, you can also store all of
+                  your client informations.
+                </p>
+                <a href="crm.imaki.fr" class="btn btn-primary" target="_blank"
+                  >Demo</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="https://via.placeholder.com/300x200"
+                class="card-img-top"
+                alt="Project 2"
+              />
+              <div class="card-body">
+                <h5 id="project2-title" class="card-title">
+                  LibreOffice Calc to SQL Database
+                </h5>
+                <p id="project2-text" class="card-text">
+                  A simple script that can be installed in all linux distros.
+                  This script let you convert a libre office calc file into a
+                  sql databse. Very useful to help people upgrade their business
+                </p>
+                <a
+                  href="https://github.com/your-repo"
+                  class="btn btn-primary"
+                  target="_blank"
+                  >View on GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Project 3 -->
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="https://via.placeholder.com/300x200"
+                class="card-img-top"
+                alt="Project 3"
+              />
+              <div class="card-body">
+                <h5 id="project3-title" class="card-title">
+                  Portfolio Website
+                </h5>
+                <p id="project3-text" class="card-text">
+                  This portfolio website built using HTML, CSS, JS, and
+                  Bootstrap.
+                </p>
+                <a
+                  href="https://github.com/your-repo"
+                  class="btn btn-primary"
+                  target="_blank"
+                  >View on GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+      <div class="container text-center">
+        <h2 id="contact-title">Contact Me</h2>
+        <p id="contact-text">
+          If you'd like to get in touch, feel free to send me a message!
+        </p>
+        <a
+          href="mailto:your.email@example.com"
+          class="btn btn-outline-primary"
+          id="contact-button"
+          >Email Me</a
+        >
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+      <p>&copy; 2024 My Portfolio. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
