@@ -1,35 +1,26 @@
+/* Style CSS personnalisé */
 body {
   font-family: "Arial", sans-serif;
 }
 
-.hero {
-  padding: 100px 0;
+.hero-section {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://via.placeholder.com/1920x1080") no-repeat center center/cover;
 }
 
-.card {
-  margin-bottom: 30px;
+#highlight-project {
+  background-color: #f8f9fa;
+}
+
+#projects .card {
+  transition: transform 0.3s ease-in-out;
+}
+
+#projects .card:hover {
+  transform: scale(1.05);
 }
 
 footer {
-  margin-top: 30px;
-}
-
-/* Dark mode styling */
-.dark-mode {
-  background-color: #121212;
-  color: white;
-}
-
-.dark-mode .navbar,
-.dark-mode footer {
-  background-color: #1f1f1f;
-}
-
-.dark-mode .bg-light {
-  background-color: #292929 !important;
-}
-
-.dark-mode .btn-outline-light {
-  color: white;
-  border-color: white;
+  background-color: #212529;
 }
